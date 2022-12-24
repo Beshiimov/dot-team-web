@@ -112,6 +112,14 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 #viewport {
   flex: 1 1 auto;
   display: flex;
@@ -130,10 +138,6 @@ main {
   margin: 0 auto;
 }
 
-section {
-  will-change: contents;
-}
-
 /*-----------------------*/
 .noise {
   position: fixed;
@@ -150,6 +154,7 @@ section {
 }
 
 #preloader, #preloader2, #preloader3, #preloader4, #preloader5 {
+  overflow: hidden;
   position: fixed;
   display: flex;
   align-items: center;
@@ -204,6 +209,7 @@ section {
   border-radius: 15px;
   background-color: #f1f0ee;
   z-index: 10;
+  will-change: contents;
 }
 
 /*----------------------------------*/
