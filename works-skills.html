@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230103145715">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap&_v=20230103145715"
         rel="stylesheet">
   <title>Hey | It's DotTeam</title>
 </head>
-  <body>
+  <body data-barba="wrapper">
     <header>
   <div class="header container">
     <div class="logo">.team</div>
@@ -20,7 +20,7 @@
 </header>
 
     <div id="preloader">
-      <div id="percent">1%</div>
+      <div id="percent">0%</div>
       <div id="bar">
         <div id="barconfrm"></div>
       </div>
@@ -38,97 +38,111 @@
     </ul>
 
     <div id="viewport">
-      <main data-barba="wrapper">
-        <div
-          class="container WorksSkillsContainer"
-          data-barba="container"
-          data-barba-namespace="works-skills"
-        >
-          <section class="Skills">
-            <h2>Some of our Skills</h2>
-            <div class="Skills__body">
-              <h3>Front-end</h3>
-              <ul>
-                <li>
-                  <div class="Skills__text">
-                    <span>1</span>
-                    <p>JavaScript</p>
-                  </div>
-                  <img src="img/skills/js.svg" alt="JavaScript" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>2</span>
-                    <p>TypeScript</p>
-                  </div>
-                  <img src="img/skills/ts.svg" alt="TypeScript" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>3</span>
-                    <p>React</p>
-                  </div>
-                  <img src="img/skills/react.svg" alt="React" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>4</span>
-                    <p>Next.js</p>
-                  </div>
-                  <img src="img/skills/next.svg" alt="Next.js" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>5</span>
-                    <p>Gsap</p>
-                  </div>
-                  <img src="img/skills/gsap.svg" alt="Gsap" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>6</span>
-                    <p>Styled Components</p>
-                  </div>
-                  <img src="img/skills/styled.svg" alt="Styled Components" />
-                </li>
-              </ul>
-              <h3>Back-end</h3>
-              <ul>
-                <li>
-                  <div class="Skills__text">
-                    <span>1</span>
-                    <p>Php</p>
-                  </div>
-                  <img src="img/skills/php.svg" alt="Php" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>2</span>
-                    <p>Django</p>
-                  </div>
-                  <img src="img/skills/django.png" alt="Django" />
-                </li>
-              </ul>
-              <h3>Other-Skills</h3>
-              <ul>
-                <li>
-                  <div class="Skills__text">
-                    <span>1</span>
-                    <p>Figma</p>
-                  </div>
-                  <img src="img/skills/figma.svg" alt="Figma" />
-                </li>
-                <li>
-                  <div class="Skills__text">
-                    <span>2</span>
-                    <p>SPA</p>
-                  </div>
-                  <img src="img/skills/spa.svg" alt="spa" />
-                </li>
-              </ul>
+      <main
+        class="WorksSkillsContainer"
+        data-barba="container"
+        data-barba-namespace="works-skills"
+      >
+        <section class="Works">
+          <h2>Works</h2>
+          <div class="project-wrapper">
+            <div class="project">
+              <picture><source srcset="./img/works/perfumery.webp" type="image/webp"><img src="./img/works/perfumery.png" alt="Perfumer" /></picture>
+              <div class="project__text">
+                <span>1</span>
+                <b>Perfumery</b>
+              </div>
             </div>
-          </section>
-        </div>
+            <div class="project">
+              <picture><source srcset="./img/works/moviee.webp" type="image/webp"><img src="./img/works/moviee.jpg" alt="moviee" /></picture>
+              <div class="project__text">
+                <span>2</span>
+                <b>Moviee</b>
+              </div>
+            </div>
+            <div class="project">
+              <picture><source srcset="./img/works/nft.webp" type="image/webp"><img src="./img/works/nft.png" alt="nft" /></picture>
+              <div class="project__text">
+                <span>3</span>
+                <b>Nft Dashboard</b>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="Skills container">
+          <h2>Some of our Skills</h2>
+          <div class="Skills__body">
+            <h3>Front-end</h3>
+            <ul>
+              <li>
+                <div class="Skills__text">
+                  <p>JavaScript</p>
+                  <img src="img/skills/js.svg" alt="JavaScript" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>TypeScript</p>
+                  <img src="img/skills/ts.svg" alt="TypeScript" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>React</p>
+                  <img src="img/skills/react.svg" alt="React" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>Next.js</p>
+                  <img src="img/skills/next.svg" alt="Next.js" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>Gsap</p>
+                  <img src="img/skills/gsap.svg" alt="Gsap" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>Styled Components</p>
+                  <img src="img/skills/styled.svg" alt="Styled Components" />
+                </div>
+              </li>
+            </ul>
+            <!-- <h3>Back-end</h3>
+            <ul>
+              <li>
+                <div class="Skills__text">
+                  <p>Php</p>
+                  <img src="img/skills/php.svg" alt="Php" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>Django</p>
+                  <picture><source srcset="img/skills/django.webp" type="image/webp"><img src="img/skills/django.png" alt="Django" /></picture>
+                </div>
+              </li>
+            </ul> -->
+            <h3>Other-Skills</h3>
+            <ul>
+              <li>
+                <div class="Skills__text">
+                  <p>Figma</p>
+                  <img src="img/skills/figma.svg" alt="Figma" />
+                </div>
+              </li>
+              <li>
+                <div class="Skills__text">
+                  <p>SPA</p>
+                  <img src="img/skills/spa.svg" alt="spa" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <nav>
   <ul class="navbar">
@@ -159,7 +173,7 @@
 </footer>
 
 
-    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js?_v=20230103145715"></script>
+    <script src="js/app.min.js?_v=20230103145715"></script>
   </body>
 </html>
